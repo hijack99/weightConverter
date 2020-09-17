@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Weight Converter</title>
+    <style>
+        body{
+            margin-top: 90px;
+            background: #343434;
+            color: #fff;
+        }
+        #output {
+            color: red;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Калькулятор веса</h1>
+                <form>
+                    <div class="form-group">
+                        <input
+                        id="gramsOutput" 
+                        type="number" 
+                        class="form-control form-control-lg" 
+                        placeholder="Введите граммы..."
+                        >
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card mb-2">
+                        <div class="card-block">
+                            <h4>Тонны:</h4>
+                            <div id="tonsOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card mb-2">
+                        <div class="card-block">
+                            <h4>Килограммы:</h4>
+                            <div id="KgOutput"></div>
+                        </div>
+                    </div>
+                    <div class="card mb-2">
+                        <div class="card-block">
+                            <h4>Фунты:</h4>
+                            <div id="lbOutput"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>
